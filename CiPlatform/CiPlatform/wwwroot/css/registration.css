@@ -1,0 +1,50 @@
+.row{
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* *body{
+    overflow-x: hidden;
+} */
+
+.btn {
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+}
+
+body{
+    
+    
+}
+
+
+.btn:hover{
+    background-color: #F88634;
+    color: white;
+}
+
+.carousel-inner img{
+    height: auto;
+  
+    width: 100%;
+    
+}
+
+.login{
+    padding-top: 10%;
+    color: #414141;
+}
+
+.login p span a{
+    color: #414141;
+    text-decoration: none;
+
+}
+
+.loginnow a{
+    color: blue;
+    text-decoration: none;
+}
+
+

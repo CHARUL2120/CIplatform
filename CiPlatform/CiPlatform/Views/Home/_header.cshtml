@@ -1,0 +1,82 @@
+﻿
+<nav class="navbar navbar-expand-sm text-dark bg-light">
+    <div class="container-xl">
+        <button class="navbar-toggler border-0 me-3 p-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon">&#9776;</span>
+        </button>
+        <a class="navbar-brand d-hidden" href="#">
+            <img src="~/Assets/logo.png" alt="" />
+        </a>
+
+        <!-- <a class="navbar-brand" href="#"><img src="images/aamir.png" alt="" width="100px"></a> -->
+        <div class="offcanvas offcanvas-start w-75"
+             tabindex="-1"
+             id="offcanvasNavbar"
+             aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                <button type="button"
+                        class="btn-close ms-auto"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="storyListing" >Stories</a>
+                       
+                    </li>
+                    <li class="nav-item dropdown mx-4">
+                        <a class="nav-link text-dark clearfix"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <span class="left"> Policy </span>
+                            <span class="right">
+                                &nbsp
+                                <img src="~/Assets/drop-down.png" alt="" width="9px" />
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-dark" href="#">Volunteering</a></li>
+                            <li><a class="dropdown-item text-dark" href="#">Sponsored</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="~/Assets/search.png"
+             alt=""
+             class="d-sm-none d-inline-block ms-auto" />
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link text-end"
+                   href="#"
+                   role="button"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <img src="~/Assets/user-img.png" alt="" class="profile-img" />
+                    <span class="d-none d-sm-inline-block text-dark"> Evan &nbsp</span>
+                    <img class="d-none d-sm-inline-block"
+                         src="~/Assets/drop-down.png"
+                         alt=""
+                         width="9px" />
+                </a>
+
+                <ul class="dropdown-menu w-75 position-absolute dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Help Center</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<hr class="m-0">

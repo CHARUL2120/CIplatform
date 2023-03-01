@@ -1,0 +1,170 @@
+﻿<form action="missions" method="post">
+	<nav class="navbar navbar-expand-sm bg-light p-0">
+		<div class="container-xl">
+			<button class="btn m-0 p-0" type="submit">
+				<img src="@Url.Content("~/assets/search.png")" alt="" class="d-none d-sm-inline-block">
+			</button>
+			<input type="text" class="form-control search-bar" aria-label="Text input with dropdown button"
+				   placeholder="Search missions...">
+
+			<button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasSearch" aria-controls="offcanvasNavbar">
+				<img src="@Url.Content("~/assets/filter.png")" alt="">
+			</button>
+
+			<div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close">
+						<img src="@Url.Content("~/assets/left.png")" alt="">
+					</button>
+					<button type="button" class="btn p-0 ms-auto">
+						clear all
+					</button>
+				</div>
+				<div class="offcanvas-body">
+
+					<ul class="navbar-nav w-100">
+						<li class="nav-item dropdown filter-dropdown">
+							<a class="nav-link clearfix text-dark" href="#" role="button" data-bs-toggle="dropdown"
+							   aria-expanded="false">
+								<span class="left">Country</span> <span class="right">
+									<img src="@Url.Content("~/assets/drop-down.png")"
+										 alt="" width="9px">
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end w-100">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown filter-dropdown">
+							<a class="nav-link clearfix text-dark" href="#" role="button" data-bs-toggle="dropdown"
+							   aria-expanded="false">
+								<span class="left">City</span> <span class="right">
+									<img src="@Url.Content("~/assets/drop-down.png")"
+										 alt="" width="9px">
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end w-100">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown filter-dropdown">
+							<a class="nav-link clearfix text-dark" href="#" role="button" data-bs-toggle="dropdown"
+							   aria-expanded="false">
+								<span class="left">Theme</span> <span class="right">
+									<img src="@Url.Content("~/assets/drop-down.png")"
+										 alt="" width="9px">
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end w-100">
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Environment
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Children
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Science
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Health
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Animal
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Education
+										</label>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown filter-dropdown">
+							<a class="nav-link clearfix text-dark" href="#" role="button" data-bs-toggle="dropdown"
+							   aria-expanded="false">
+								<span class="left">Skills</span> <span class="right">
+									<img src="@Url.Content("~/assets/drop-down.png")"
+										 alt="" width="9px">
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end w-100">
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Running
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Dance
+										</label>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Singing
+										</label>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</nav>
+</form>
+<hr class="m-0">
+<hr class="m-0">
+<hr class="m-0">
+
+@*
+<div class="container-xl mt-3">
+    @for (var i = 0; i < 3; i++)
+    {
+        <span class="badge-primary px-3 py-1 me-2 my-3 badge-border rounded-pill" name="filter" id="filter">filter &nbsp <a role="button" class="btn-close" aria-label="Close"></a></span>
+    }<button type="reset" class="btn py-1">clear</button>
+</div>*@

@@ -1,0 +1,240 @@
+﻿
+
+<partial name="_header.cshtml" />
+
+<partial name="_searchBar.cshtml" />
+
+
+<div class="container-xl mt-5">
+	<div class="row">
+		<div class="col">
+			<h4>Explore <b><span id="missionTotal">72</span> missions</b></h4>
+		</div>
+		<div class="col-3 ms-auto d-none d-md-block">
+			<div class="dropdown text-end">
+				<button type="button" class="btn border w-75 p-2 clearfix" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false">
+					<span class="left">Sort</span> <span class="right">
+						<img src="@Url.Content("~/assets/drop-down.png")" alt=""
+							 width="9px">
+					</span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end w-75">
+					<li><a class="dropdown-item" href="#">Ascending</a></li>
+					<li><a class="dropdown-item" href="#">Descending</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-auto text-end d-none d-lg-block">
+			<button onclick="showGrid()" class="btn" id="grid-btn">
+				<img src="@Url.Content("~/assets/grid.png")" alt="">
+			</button>
+			<button onclick="showList() " class="btn" id="list-btn">
+				<img src="@Url.Content("~/assets/list.png")" alt="">
+			</button>
+		</div>
+	</div>
+
+	@*grid view*@
+
+
+	<div class="row " id="gridContainer">
+
+		<div class="col-12 col-sm-6 col-lg-4">
+			<div class="card rounded-0 shadow border-0 my-3">
+				<div class="position-relative">
+					<img src="~/assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+						 class="card-img-top rounded-0" alt="...">
+					<div class="card-img-overlay d-flex flex-column justify-content-around">
+						<p class="card-text text-end">
+							<small class="bg-dark py-1 px-2 bg-opacity-50 tags rounded-pill">
+								<i class="bi bi-geo-alt"></i> Torronto
+							</small>
+						<p>
+						<p class="card-text text-end">
+							<button class="btn my-1 px-2 pb-1 tags bg-dark bg-opacity-50 like rounded-circle">
+
+								<h5 class="bi bi-heart-fill m-0"></h5>
+							</button>
+							<br>
+							<button class="btn my-1 px-2 tags bg-dark bg-opacity-50 share rounded-circle">
+
+								<h5 class="bi bi-share-fill m-0"></h5>
+
+							</button>
+						</p>
+					</div>
+					<div class="badge-primary badge-style rounded-pill">
+						<p class="py-1 px-4 m-0">Environment</p>
+					</div>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+					<p class="card-text">
+						Some quick example text to build on the card title and make up the bulk of
+						the card's content.
+					</p>
+					<h6 class=".card-subtitle clearfix">
+						<span class="left">Tree Canada</span>
+						<span class="right">
+							<img src="~/assets/star.png" alt="">
+							<img src="~/assets/star.png" alt="">
+							<img src="~/assets/star.png" alt="">
+							<img src="~/assets/star.png" alt="">
+							<img src="~/assets/star.png" alt="">
+						</span>
+					</h6>
+				</div>
+
+				<div class="position-relative my-2">
+					<div class="badge-primary badge-style badge-border rounded-pill">
+						<p class="px-4 m-0">From 10/01/2019 until 25/02/2019</p>
+					</div>
+					<hr class="m-0">
+				</div>
+
+				<div class="card-body clearfix d-flex justify-content-between">
+					<div class="clearfix">
+						<img src="~/assets/Seats-left.png" alt="" class="left">
+						<div class="left ms-1">
+							<h6 class="card-title m-0 ">10</h6>
+							<small class="card-text text-wrap w-50">Seats Left</small>
+						</div>
+					</div>
+					<div class="clearfix">
+						<img src="~/assets/deadline.png" alt="" class="left">
+						<div class="left ms-1">
+							<h6 class="card-title m-0">09/01/2023</h6>
+							<small class="card-text">Deadline</small>
+						</div>
+					</div>
+				</div>
+				<hr class="m-0">
+				<div class="card-body text-center">
+					<a class="btn login-btn px-3 py-2 m-0" asp-area="" asp-action="VolunteerMission" asp-controller="Home">
+						Apply &nbsp
+						<b class="bi bi-arrow-right"></b>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@*list view *@
+
+	<div class="row d-none" id="listContainer">
+
+		<div class="col-12">
+			<div class="card rounded-0 shadow border-0 my-3">
+				<div class="row g-0">
+					<div class="col-auto">
+						<div class="position-relative">
+							<img src="~/assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+								 class="list-img rounded-0" alt="...">
+							<div class="card-img-overlay d-flex flex-column justify-content-around">
+								<p class="card-text text-end">
+									<small class="bg-dark py-1 px-2 bg-opacity-50 tags rounded-pill">
+										<i class="bi bi-geo-alt"></i> Torronto
+									</small>
+								<p>
+								<p class="card-text text-end">
+									<button class="btn my-1 px-2 pb-1 tags bg-dark bg-opacity-50 like rounded-circle">
+
+										<h5 class="bi bi-heart-fill m-0"></h5>
+									</button>
+									<br>
+									<button class="btn my-1 px-2 tags bg-dark bg-opacity-50 share rounded-circle">
+
+										<h5 class="bi bi-share-fill m-0"></h5>
+
+									</button>
+								</p>
+							</div>
+							<div class="badge-primary badge-style rounded-pill">
+								<p class="py-1 px-4 m-0">Environment</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+							<p class="card-text text-truncate w-100">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+							</p>
+						</div>
+						<div class="row g-0 justify-content-between">
+							<div class="col-5">
+								<div class="card-body pt-1">
+									<h6 class=".card-subtitle clearfix">
+										<span class="left">Tree Canada</span>
+										<span class="right">
+											<img src="~/assets/star.png" alt="">
+											<img src="~/assets/star.png" alt="">
+											<img src="~/assets/star.png" alt="">
+											<img src="~/assets/star.png" alt="">
+											<img src="~/assets/star.png" alt="">
+										</span>
+									</h6>
+									<a href="#" class="btn login-btn px-3 py-2">
+										Apply &nbsp <b class="bi bi-arrow-right"></b>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-xl-5">
+								<div class="position-relative">
+									<div class="badge-primary badge-style badge-border rounded-pill">
+										<p class="px-4">From 10/01/2019 until 25/02/2019</p>
+									</div>
+									<hr>
+								</div>
+								<div class="card-body clearfix pb-0 d-flex justify-content-between">
+									<div class="clearfix">
+										<img src="~/assets/Seats-left.png" alt="" class="left">
+										<div class="left ms-1">
+											<h6 class="card-title m-0 ">10</h6>
+											<small class="card-text text-wrap w-50">Seats Left</small>
+										</div>
+									</div>
+									<div class="clearfix">
+										<img src="~/assets/deadline.png" alt="" class="left">
+										<div class="left ms-1">
+											<h6 class="card-title m-0">09/01/2023</h6>
+											<small class="card-text">Deadline</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<partial name="_pagination.cshtml" />
+
+</div>
+
+<partial name="_footer.cshtml" />
+
+<script>
+	function showGrid() {
+		gridbtn = document.getElementById("grid-btn");
+		gridContainer = document.getElementById("gridContainer");
+		listContainer = document.getElementById("listContainer")
+		gridContainer.style.display = "block";
+		listContainer.classList.add("d-none");
+		console.log("grid button pressed ");
+	}
+
+	function showList() {
+		listbtn = document.getElementById("list-btn");
+		gridContainer = document.getElementById("gridContainer");
+		listContainer = document.getElementById("listContainer");
+		gridContainer.style.display = "none";
+		listContainer.classList.remove("d-none");
+		console.log("list btn pressed");
+	}
+
+</script>

@@ -1,0 +1,60 @@
+.row {
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.btn {
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+}
+
+    .btn:hover {
+        background-color: #F88634;
+        color: white;
+    }
+
+.carousel-inner img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*
+.carousel-inner img:hover{
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.8;
+    transition-delay: 0.3s;
+    transition: ease-out;
+}
+    
+    */
+
+/*.carousel-caption{
+    background-color: black;
+    opacity: 0.5;*/
+/* width: max-content; */
+/*border-radius: 5px;
+
+}*/
+
+.carousal-caption:hover {
+    opacity: 1;
+}
+
+.login {
+    padding-top: 10%;
+    color: #414141;
+}
+
+    .login p span a {
+        color: #414141;
+        text-decoration: none;
+    }
+
+.loginnow a {
+    color: blue;
+    text-decoration: none;
+}
